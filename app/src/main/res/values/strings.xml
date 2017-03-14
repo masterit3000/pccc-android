@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PCCC</string>
+
+    <string name="title_activity_fullscreen">PCCC</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="service_name">fire service</string>
+
 </resources>
