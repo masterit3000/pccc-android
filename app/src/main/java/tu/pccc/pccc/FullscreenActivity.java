@@ -236,7 +236,9 @@ public class FullscreenActivity extends AppCompatActivity {
                                     CF.write(FullscreenActivity.this.getApplicationContext(), SysConstraints.KEY_NAME, eName.getAsString());
 
                                     TblSmsDAO tblSmsDAO = new TblSmsDAO(FullscreenActivity.this.getApplicationContext());
-                                    tblSmsDAO.insertSms(sms.toString());
+                                    if (sms != null) {
+                                        tblSmsDAO.insertSms(sms.toString());
+                                    }
                                     emitWhenOnline();
                                     break;
                                 case STATUS_NOT_APPROVED:
